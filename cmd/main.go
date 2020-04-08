@@ -88,7 +88,7 @@ func main() {
 
 			fmt.Print(time.Now(), " -- ")
 
-			resp, err := http.Get("https://www.heb.com/commerce-api/v1/timeslot/timeslots?store_id=659&days=20&fulfillment_type=pickup")
+			resp, err := http.Get("https://www.heb.com/commerce-api/v1/timeslot/timeslots?store_id=659&days=15&fulfillment_type=pickup")
 			if err != nil {
 				fmt.Println("http.Get err: ", err.Error())
 				continue
